@@ -17,29 +17,31 @@ This project was developed by Gonçalo Martins (up202108707@fe.up.pt), Luís Alv
 
 - **Ghost Enemies** - We have implemented enemies that take away one of the player's lives upon contact with said ghosts.
 
-### PLANNED FEATURES
-
-- **Power Up** - We plan on implementing a power up just like the original game. These will be available in certain points of the map and when collected, they will make Pac-Man invincible for a certain amount of time.
+- **Power Up** - We implemented a power up just like the original game. These will be available in certain points of the map and when collected, they will make Pac-Man invincible for a certain amount of time and make him able to eat the Monsters.
 
 - **Hidden Paths** - This one is also inspired on the original game. There are certain places in the map (frequently on the left and right side), that let you go directly to the other side of the map.
 
-- **Permanent position movement** - We pretend that the main character continuosly moves through the map. This means that you only need to input to change direction. If Pac-Man has room to move in the current direction, he will keep on going until he either dies, changes direction or hits a wall.
+- **Permanent position movement** - The main character continuosly moves through the map. This means that you only need to input to change direction. If Pac-Man has room to move in the current direction, he will keep on going until he either dies, changes direction or hits a wall.
 
 - **Game restart after each taken life** - We want the game to restart every time the player loses a life. When the 3 lives are over the game is over.
 
 ### DESIGN
 
-- **The Pattern.** In our game we are mainly using two design patterns: State Pattern and Factory Pattern.
+- **The Pattern.** In our game we are mainly using two design patterns: State Pattern, Factory Method, Observer, Builder and Game Loop.
 
 - **Implementation.** In the class diagram below, you can see how we modeled our classes in order to best integrate and use the design patterns we choose.
 
   ![IMG](PacmanClassDiagram.png)
 
-- **Consequences.** Despite the numerous advantages of patterns, there are some consequences such as, in the case of the State pattern: it localizes state-specific behavior and partitions behavior for different states, it makes state transitions explicit and state objects can be shared.
-  In case of Factory pattern: Factory methods eliminate the need to bind application-specific classes into your code. The code only needs to deal with the Product interface, therefore it can work with any user-defined ConcreteProduct classes.
+- **Consequences.** Despite the numerous advantages of patterns, there are some consequences such as:
 
-- **Future Implementations.** We intend to implement the Command design pattern somewhere in our program. The Composite design pattern might be used as well when drawing the different characters and arenas of the game. We will probably need the Observer Pattern to implement the Power Up feature in the future.
+ -In the case of the State pattern: it localizes state-specific behavior and partitions behavior for different states, it makes state transitions explicit and state objects can be shared.
 
+  -Factory methods eliminate the need to bind application-specific classes into your code. The code only needs to deal with the Product interface, therefore it can work with any user-defined ConcreteProduct classes.
+
+  -In the case of Observer: Abstract coupling between subject and observer. Unexpected updates.
+
+  -The Builder object provides the director with an abstract interface for constructing the product. The interface lets the builder hide the representation and internal structure of the product. It also hides how the product gets assembled. Because the product is constructed through an abstract interface, all you have to do to change the product's internal representation is define a new kind of builder.
 ------
 
 ### KNOWN CODE SMELLS
