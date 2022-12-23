@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.pacman.controller.PacmanControllerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2022-12-23T18:12:44" hostname="GCSAM-DESKTOP" time="0.014">
+  <properties/>
+  <testcase name="moveUp()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.005"/>
+  <testcase name="verifyActionPossible()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="moveDown()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="moveLeft()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="verifyActionNotPossible()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="moveEmpty()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="moveRight()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.0"/>
+  <testcase name="moveDownWithHiddenPath()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.0"/>
+  <testcase name="moveRightWithHiddenPath()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.001"/>
+  <testcase name="moveLeftWithHiddenPath()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.0"/>
+  <testcase name="moveUpWithHiddenPath()" classname="com.aor.pacman.controller.PacmanControllerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

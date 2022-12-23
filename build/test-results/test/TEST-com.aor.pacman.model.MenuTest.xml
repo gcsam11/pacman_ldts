@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.pacman.model.MenuTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-23T18:12:44" hostname="GCSAM-DESKTOP" time="0.007">
+  <properties/>
+  <testcase name="startMenu()" classname="com.aor.pacman.model.MenuTest" time="0.001"/>
+  <testcase name="endMenu()" classname="com.aor.pacman.model.MenuTest" time="0.001"/>
+  <testcase name="failedLevelMenu()" classname="com.aor.pacman.model.MenuTest" time="0.001"/>
+  <testcase name="quitMenu()" classname="com.aor.pacman.model.MenuTest" time="0.001"/>
+  <testcase name="nextLevelMenu()" classname="com.aor.pacman.model.MenuTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

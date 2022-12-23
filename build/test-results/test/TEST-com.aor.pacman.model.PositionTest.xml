@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.pacman.model.PositionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-12-23T18:12:44" hostname="GCSAM-DESKTOP" time="0.003">
+  <properties/>
+  <testcase name="positionGetDown()" classname="com.aor.pacman.model.PositionTest" time="0.0"/>
+  <testcase name="positionGetLeft()" classname="com.aor.pacman.model.PositionTest" time="0.001"/>
+  <testcase name="positionGetRight()" classname="com.aor.pacman.model.PositionTest" time="0.0"/>
+  <testcase name="emptyEquals()" classname="com.aor.pacman.model.PositionTest" time="0.0"/>
+  <testcase name="positionGetUp()" classname="com.aor.pacman.model.PositionTest" time="0.0"/>
+  <testcase name="diffValues()" classname="com.aor.pacman.model.PositionTest" time="0.0"/>
+  <testcase name="Equals()" classname="com.aor.pacman.model.PositionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

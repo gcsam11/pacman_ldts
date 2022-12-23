@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.pacman.gui.LanternaGUITest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-23T18:12:44" hostname="GCSAM-DESKTOP" time="0.074">
+  <properties/>
+  <testcase name="drawCoin()" classname="com.aor.pacman.gui.LanternaGUITest" time="0.069"/>
+  <testcase name="drawText()" classname="com.aor.pacman.gui.LanternaGUITest" time="0.001"/>
+  <testcase name="drawWall()" classname="com.aor.pacman.gui.LanternaGUITest" time="0.001"/>
+  <testcase name="drawPacman()" classname="com.aor.pacman.gui.LanternaGUITest" time="0.001"/>
+  <testcase name="drawMonster()" classname="com.aor.pacman.gui.LanternaGUITest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

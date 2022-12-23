@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aor.pacman.model.LoaderArenaBuilderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-23T18:12:44" hostname="GCSAM-DESKTOP" time="0.004">
+  <properties/>
+  <testcase name="height()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.001"/>
+  <testcase name="coins()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.0"/>
+  <testcase name="walls()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.0"/>
+  <testcase name="width()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.001"/>
+  <testcase name="monster()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.0"/>
+  <testcase name="createPacman()" classname="com.aor.pacman.model.LoaderArenaBuilderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
