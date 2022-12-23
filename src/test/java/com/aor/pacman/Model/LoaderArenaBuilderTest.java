@@ -1,7 +1,6 @@
-package com.aor.pacman.Model;
+package com.aor.pacman.model;
 
 import com.aor.pacman.controller.game.PacmanController;
-import com.aor.pacman.model.Position;
 import com.aor.pacman.model.game.arena.Arena;
 import com.aor.pacman.model.game.arena.LoaderArenaBuilder;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class LoaderArenaBuilderTest {
+class LoaderArenaBuilderTest {
 
     LoaderArenaBuilder loaderArena;
 
@@ -19,7 +18,7 @@ public class LoaderArenaBuilderTest {
     PacmanController pacmanController;
 
     @BeforeEach
-    public void LoadArena() {
+    void LoadArena() {
         try {
             loaderArena = new LoaderArenaBuilder(0);
             arena = loaderArena.createArena();
@@ -32,23 +31,38 @@ public class LoaderArenaBuilderTest {
     }
 
     @Test
-    public void width(){
+    void width(){
         int width = 5;
 
         Assertions.assertEquals(width, loaderArena.getWidth());
     }
 
     @Test
-    public void height(){
+    void height(){
         int height = 5;
 
         Assertions.assertEquals(height, loaderArena.getHeight());
     }
 
     @Test
-    public void CreatePacman(){
+    void createPacman(){
         Position endPosition = new Position(2, 2);
 
         Assertions.assertEquals(endPosition, arena.getPacman().getPosition());
+    }
+
+    @Test
+    void walls() {
+        Assertions.assertEquals(12, arena.getWalls().size());
+    }
+
+    @Test
+    void monster() {
+        Assertions.assertEquals(1, arena.getMonsters().size());
+    }
+
+    @Test
+    void coins() {
+        Assertions.assertEquals(11, arena.getCoins().size());
     }
 }

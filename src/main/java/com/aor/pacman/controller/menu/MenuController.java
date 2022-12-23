@@ -41,24 +41,21 @@ public class MenuController extends Controller<Menu> {
             }
             case NEXT -> {
                 try {
+                    getModel().setCurrentEntry(0);
                     game.setState(getModel().getNewState(game.getLevel()));
                 }catch(NullPointerException e){
                     game.resetLevel();
                     game.setState(new MenuState(new EndMenuBuilder().createMenu()));
                 }
             }
-            case RESTART -> {
-                if (Objects.equals(getModel().getReference(), "EndMenu") || Objects.equals(getModel().getReference(), "FailedLevelMenu")) {
+            case START, RESTART -> {
+                if (Objects.equals(getModel().getReference(), "StartMenu") || Objects.equals(getModel().getReference(), "EndMenu") || Objects.equals(getModel().getReference(), "FailedLevelMenu")) {
                     try {
+                        getModel().setCurrentEntry(0);
                         game.setState(getModel().getNewState(1));
                     } catch (NullPointerException e) {
                         game.resetLevel();
                     }
-                }
-            }
-            case START -> {
-                if (Objects.equals(getModel().getReference(), "StartMenu")) {
-                    game.setState(getModel().getNewState(1));
                 }
             }
             case QUIT -> game.setState(new MenuState(new QuitMenuBuilder().createMenu()));

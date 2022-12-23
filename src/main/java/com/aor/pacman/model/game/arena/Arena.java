@@ -87,7 +87,13 @@ public class Arena {
         if (isEmpty(position.getLeft()) && oppositeDirection != GUI.ACTION.LEFT) possibleActions.add(GUI.ACTION.LEFT);
         if (isEmpty(position.getRight()) && oppositeDirection != GUI.ACTION.RIGHT) possibleActions.add(GUI.ACTION.RIGHT);
         int n = (int) (Math.random() * possibleActions.size());
-        GUI.ACTION possibleAction = possibleActions.get(n);
+        GUI.ACTION possibleAction;
+        if (!possibleActions.isEmpty()) {
+            possibleAction = possibleActions.get(n);
+        }
+        else {
+            possibleAction = GUI.ACTION.NONE;
+        }
         if (possibleAction == GUI.ACTION.UP) {
             monster.setOppositeDirection(GUI.ACTION.DOWN);
             return position.getUp();
@@ -100,10 +106,11 @@ public class Arena {
             monster.setOppositeDirection(GUI.ACTION.RIGHT);
             return position.getLeft();
         }
-        else {
+        else if (possibleAction == GUI.ACTION.RIGHT) {
             monster.setOppositeDirection(GUI.ACTION.LEFT);
             return position.getRight();
         }
+        return position;
     }
 
     public int isMonster(Position position) {

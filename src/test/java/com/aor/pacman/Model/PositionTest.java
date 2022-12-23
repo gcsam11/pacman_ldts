@@ -1,7 +1,5 @@
-package com.aor.pacman.Model;
+package com.aor.pacman.model;
 
-import com.aor.pacman.model.Position;
-import com.aor.pacman.model.game.arena.Arena;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,13 +22,36 @@ public class PositionTest {
         Assertions.assertNotEquals(new Position(6, 7), position);
     }
 
-    /*@Test
-    void diffObject() {
-        Assertions.assertNotEquals(new Arena(level, 10, 10), position);
-    }*/
-
     @Test
     void emptyEquals() {
         Assertions.assertNotEquals(null, position);
+    }
+
+    @Test
+    void positionGetLeft() {
+        Position testPosition = position.getLeft();
+
+        Assertions.assertEquals(new Position(3, 6), testPosition);
+    }
+
+    @Test
+    void positionGetRight() {
+        Position testPosition = position.getRight();
+
+        Assertions.assertEquals(new Position(5, 6), testPosition);
+    }
+
+    @Test
+    void positionGetUp() {
+        Position testPosition = position.getUp();
+
+        Assertions.assertEquals(new Position(4, 5), testPosition);
+    }
+
+    @Test
+    void positionGetDown() {
+        Position testPosition = position.getDown();
+
+        Assertions.assertEquals(new Position(4, 7), testPosition);
     }
 }

@@ -86,6 +86,10 @@ public class Menu {
 
     protected int getCurrentEntry(){return this.currentEntry;}
 
+    public void setCurrentEntry(int currentEntry) {
+        this.currentEntry = currentEntry;
+    }
+
     public GameState getNewState(int nextLevel) throws IOException,NullPointerException{
         if (this.getCurrentEntry() == 0) {
             return new GameState(new LoaderArenaBuilder(nextLevel).createArena());
