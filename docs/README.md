@@ -41,7 +41,7 @@ All the planned features were successfully implemented.
 
 In the class diagram below, you can see how we modeled our classes in order to best integrate and use the design patterns we choose.
 
-![IMG](PacmanClassDiagram.png)
+![IMG](../docs/PacmanClassDiagram.png)
 
 ### Model-View-Controller (MVC), State Pattern and Factory Method
 
@@ -66,7 +66,7 @@ We now have classes with different main purposes:
   
 As for the **State Pattern**:
 
-![img_1.png](img_1.png)
+![img_1.png](../docs/screenshots/StatePattern.png)
 
 [State Folder](../src/main/java/com/aor/pacman/states)
 
@@ -93,13 +93,15 @@ We wished to have different types of menus:
 
 - Quit Menu
 
-####The Pattern
+#### The Pattern
 
 We used the **Builder** pattern to make the interface menus. It allows the user to construct complex objects step by step making a simpler code.
 
 #### Implementation
 
 Each Menu extends an abstract class **MenuBuilder**, because they are all built the same way. Only what shows on the menu, such as strings, references and entries, for example, are different.
+
+![img.png](../docs/screenshots/MenuBuilder.png)
 
 [Builder Folder](../src/main/java/com/aor/pacman/model/menu)
 
@@ -124,6 +126,8 @@ To help us notify the Monsters that the Power Up has been activated by Pac-man, 
 As you can see in the classes below, Pacman has a list of observers and a bool field that, through the PowerUpObserver methods, will notify the Monsters when Pac-Man is powered up.
 This will slow down the Monsters and make them 'scared'.
 
+![img.png](../docs/screenshots/Observer.png)
+
 [PowerUpObserver](../src/main/java/com/aor/pacman/model/game/elements/PowerUpObserver.java)
 
 [Pacman](../src/main/java/com/aor/pacman/model/game/elements/Pacman.java)
@@ -134,8 +138,6 @@ This will slow down the Monsters and make them 'scared'.
 
   - Abstract coupling between subject and observer. 
   - Unexpected updates.
-
-------
 
 ## KNOWN CODE SMELLS
 
@@ -173,7 +175,7 @@ Therefore, Delegation should be used instead of Inheritance.
 
 Test Coverage:
 
-![img.png](img.png)
+![img.png](../docs/screenshots/TestCoverage.png)
 
 Mutation Testing:
 
@@ -188,3 +190,4 @@ The group easily divided the work so that each student does a separate part of t
 - Gonçalo Martins: 33.3%
 - Luís Alves: 33.3%
 - José Caribe: 33.3%
+
